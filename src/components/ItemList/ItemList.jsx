@@ -1,7 +1,12 @@
-export const ItemList = ({ greetings }) => {
+
+
+const ItemList = ( {saludo} ) => {
+  console.log("se actualiza el hijo")
   return (
-    <div className="ItemList">
-      <h4 className="subtitles">{greetings}</h4>
+    <div>
+        <h2>{saludo}</h2>
     </div>
-  );
-};
+  )
+}
+
+export default ItemList

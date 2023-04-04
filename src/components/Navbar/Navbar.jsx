@@ -1,50 +1,25 @@
-import { CartWidget } from "../CartWidget/CartWidget";
-import { HiOutlineBars3BottomRight } from "react-icons/hi2";
+// import "./Navbar.css"
+
+import CartWidget from "../CartWidget/CartWidget";
+import styles from "./Navbar.module.css";
+
+// import imgLogo from "../../assets/images/imagesZapa.jpg";
 
 export const Navbar = () => {
   return (
-    <navbar className="navbarContainer">
-      <div className="navbar">
-        <a href="/">
-          <img
-            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination-full_jxvtga.png"
-            className="full navbarLogo"
-            alt="beyond imagination logo"
-          />
-          <img
-            src="https://res.cloudinary.com/diruiumfk/image/upload/v1680216082/beyond-imagination_zfxqv7.png"
-            className="mini navbarLogo"
-            alt="beyond imagination logo"
-          />
-        </a>
-        <ul className="navLinksContainer">
-          <li>
-            <a href="/" className="navLinks">
-              Categories
-            </a>
-          </li>
-          <li>
-            <a href="/" className="navLinks">
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="/" className="navLinks">
-              FAQS
-            </a>
-          </li>
-          <li>
-            <a href="/" className="navLinks">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <div className="navbarOptionsContainer">
-          <button className="btn">Sign in</button>
-          <CartWidget />
-          <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
-        </div>
-      </div>
-    </navbar>
+    <div className={styles.containerNavbar}>
+      <img
+        // src="logo192.png"
+        // src={imgLogo}
+        src="https://res.cloudinary.com/dnqfh2chg/image/upload/v1680216085/imagesZapa_f496gw.jpg"
+        alt="Este es el logo de la empresa"
+      />
+      <ul style={{ display: "flex", gap: "30px" }}>
+        <li>Todas</li>
+        <li>Urbanas</li>
+        <li>Deportivas</li>
+      </ul>
+      <CartWidget />
+    </div>
   );
 };

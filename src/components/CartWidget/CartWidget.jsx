@@ -1,12 +1,12 @@
-import { BsCart3 } from "react-icons/bs";
+import { BsFillCartCheckFill } from "react-icons/bs"
 
-export const CartWidget = () => {
+const CartWidget = () => {
   return (
-    <section className="navbarOptionsContainer">
-      <div className="cartContainer">
-        <BsCart3 className="faIcons" />
-        <span className="cartCounter">0</span>
-      </div>
-    </section>
-  );
-};
+    <div>
+        <BsFillCartCheckFill size={30} />
+        <span>0</span>
+    </div>
+  )
+}
+
+export default CartWidget
